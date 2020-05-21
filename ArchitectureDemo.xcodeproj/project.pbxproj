@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD8D00BC24741219001A74C5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00BB24741219001A74C5 /* BaseViewController.swift */; };
+		AD8D00BF2474127E001A74C5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00BE2474127E001A74C5 /* Utils.swift */; };
+		AD8D00C324741EFC001A74C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00C224741EFC001A74C5 /* HomeViewController.swift */; };
+		AD8D00C5247423E7001A74C5 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00C4247423E7001A74C5 /* HomeInteractor.swift */; };
+		AD8D00C7247423FE001A74C5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00C6247423FE001A74C5 /* HomePresenter.swift */; };
+		AD8D00C924742425001A74C5 /* HomeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00C824742425001A74C5 /* HomeConfiguration.swift */; };
+		AD8D00CD2474D8AB001A74C5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00CC2474D8AB001A74C5 /* Router.swift */; };
+		AD8D00D02474D930001A74C5 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00CF2474D930001A74C5 /* Transition.swift */; };
+		AD8D00D32474DD4A001A74C5 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00D22474DD4A001A74C5 /* MusicViewController.swift */; };
+		AD8D00D62474DD89001A74C5 /* MusicRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00D52474DD89001A74C5 /* MusicRoute.swift */; };
+		AD8D00DA2475322F001A74C5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8D00D92475322F001A74C5 /* HomeRouter.swift */; };
+		ADB2557C246C2DAA0055AC99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB2557B246C2DAA0055AC99 /* AppDelegate.swift */; };
+		ADB2557E246C2DAA0055AC99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB2557D246C2DAA0055AC99 /* SceneDelegate.swift */; };
+		ADB25580246C2DAA0055AC99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB2557F246C2DAA0055AC99 /* ViewController.swift */; };
+		ADB25583246C2DAA0055AC99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB25581246C2DAA0055AC99 /* Main.storyboard */; };
+		ADB25585246C2DAD0055AC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB25584246C2DAD0055AC99 /* Assets.xcassets */; };
+		ADB25588246C2DAD0055AC99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB25586246C2DAD0055AC99 /* LaunchScreen.storyboard */; };
+		ADF974EC247533DB007927B5 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974EB247533DB007927B5 /* PushTransition.swift */; };
+		ADF974EE24753799007927B5 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974ED24753799007927B5 /* Animator.swift */; };
+		ADF974F024753940007927B5 /* MusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974EF24753940007927B5 /* MusicInteractor.swift */; };
+		ADF974F224753950007927B5 /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974F124753950007927B5 /* MusicPresenter.swift */; };
+		ADF974F42475396A007927B5 /* MusicConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974F32475396A007927B5 /* MusicConfiguration.swift */; };
+		ADF974F62475397D007927B5 /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974F52475397D007927B5 /* MusicRouter.swift */; };
+		ADF974FB2475621E007927B5 /* MainAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974FA2475621E007927B5 /* MainAppState.swift */; };
+		ADF974FD2475626D007927B5 /* MusicState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974FC2475626D007927B5 /* MusicState.swift */; };
+		ADF974FF247566B9007927B5 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF974FE247566B9007927B5 /* GameState.swift */; };
+		ADF9750124756753007927B5 /* MainAppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9750024756753007927B5 /* MainAppReducer.swift */; };
+		ADF975032475681C007927B5 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF975022475681C007927B5 /* GameReducer.swift */; };
+		ADF9750524757A3B007927B5 /* MusicReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9750424757A3B007927B5 /* MusicReducer.swift */; };
+		ADF97508247588FC007927B5 /* GameActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF97507247588FC007927B5 /* GameActions.swift */; };
+		ADF9750A24758C69007927B5 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9750924758C69007927B5 /* ModalTransition.swift */; };
+		ADF9750D247590B5007927B5 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9750C247590B5007927B5 /* Property.swift */; };
+		ADF9750F24759A62007927B5 /* Redux.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF9750E24759A62007927B5 /* Redux.swift */; };
+		F1B36863231A7246A9BB2201 /* Pods_ArchitectureDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B5EF15F15311E050F0F03B /* Pods_ArchitectureDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2A4A197D70BF363FF3E5E76C /* Pods-ArchitectureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureDemo.release.xcconfig"; path = "Target Support Files/Pods-ArchitectureDemo/Pods-ArchitectureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AD8D00BB24741219001A74C5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD8D00BE2474127E001A74C5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AD8D00C224741EFC001A74C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AD8D00C4247423E7001A74C5 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		AD8D00C6247423FE001A74C5 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AD8D00C824742425001A74C5 /* HomeConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfiguration.swift; sourceTree = "<group>"; };
+		AD8D00CC2474D8AB001A74C5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		AD8D00CF2474D930001A74C5 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		AD8D00D22474DD4A001A74C5 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		AD8D00D52474DD89001A74C5 /* MusicRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRoute.swift; sourceTree = "<group>"; };
+		AD8D00D92475322F001A74C5 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		ADB25578246C2DAA0055AC99 /* ArchitectureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitectureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB2557B246C2DAA0055AC99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADB2557D246C2DAA0055AC99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ADB2557F246C2DAA0055AC99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADB25582246C2DAA0055AC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADB25584246C2DAD0055AC99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADB25587246C2DAD0055AC99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADB25589246C2DAD0055AC99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF974EB247533DB007927B5 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		ADF974ED24753799007927B5 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		ADF974EF24753940007927B5 /* MusicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInteractor.swift; sourceTree = "<group>"; };
+		ADF974F124753950007927B5 /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
+		ADF974F32475396A007927B5 /* MusicConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicConfiguration.swift; sourceTree = "<group>"; };
+		ADF974F52475397D007927B5 /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
+		ADF974FA2475621E007927B5 /* MainAppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppState.swift; sourceTree = "<group>"; };
+		ADF974FC2475626D007927B5 /* MusicState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicState.swift; sourceTree = "<group>"; };
+		ADF974FE247566B9007927B5 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		ADF9750024756753007927B5 /* MainAppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppReducer.swift; sourceTree = "<group>"; };
+		ADF975022475681C007927B5 /* GameReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		ADF9750424757A3B007927B5 /* MusicReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicReducer.swift; sourceTree = "<group>"; };
+		ADF97507247588FC007927B5 /* GameActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameActions.swift; sourceTree = "<group>"; };
+		ADF9750924758C69007927B5 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		ADF9750C247590B5007927B5 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		ADF9750E24759A62007927B5 /* Redux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redux.swift; sourceTree = "<group>"; };
+		B3B5EF15F15311E050F0F03B /* Pods_ArchitectureDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArchitectureDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F68C8FF05F5C0C050E8F26F2 /* Pods-ArchitectureDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitectureDemo.debug.xcconfig"; path = "Target Support Files/Pods-ArchitectureDemo/Pods-ArchitectureDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADB25575246C2DAA0055AC99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B36863231A7246A9BB2201 /* Pods_ArchitectureDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		895F460CF5971731B1C8B3E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3B5EF15F15311E050F0F03B /* Pods_ArchitectureDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8A0D5CC0C0A583654C613F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F68C8FF05F5C0C050E8F26F2 /* Pods-ArchitectureDemo.debug.xcconfig */,
+				2A4A197D70BF363FF3E5E76C /* Pods-ArchitectureDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AD8D00B824741154001A74C5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				ADF974F724756110007927B5 /* Redux */,
+				AD8D00CB2474CBDE001A74C5 /* Models */,
+				AD8D00C124741AFF001A74C5 /* Router */,
+				AD8D00BD24741261001A74C5 /* Utils */,
+				AD8D00BA24741208001A74C5 /* Base */,
+				AD8D00B9247411AC001A74C5 /* Scenes */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		AD8D00B9247411AC001A74C5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00D12474DD29001A74C5 /* Music */,
+				AD8D00C024741AEF001A74C5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AD8D00BA24741208001A74C5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00BB24741219001A74C5 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AD8D00BD24741261001A74C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9750B2475905B007927B5 /* Wrapper */,
+				AD8D00BE2474127E001A74C5 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AD8D00C024741AEF001A74C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00C224741EFC001A74C5 /* HomeViewController.swift */,
+				AD8D00C4247423E7001A74C5 /* HomeInteractor.swift */,
+				AD8D00C6247423FE001A74C5 /* HomePresenter.swift */,
+				AD8D00C824742425001A74C5 /* HomeConfiguration.swift */,
+				AD8D00D92475322F001A74C5 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AD8D00C124741AFF001A74C5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00D42474DD7C001A74C5 /* Routes */,
+				AD8D00CE2474D926001A74C5 /* Transitions */,
+				AD8D00CC2474D8AB001A74C5 /* Router.swift */,
+				ADF974ED24753799007927B5 /* Animator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AD8D00CB2474CBDE001A74C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD8D00CE2474D926001A74C5 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00CF2474D930001A74C5 /* Transition.swift */,
+				ADF974EB247533DB007927B5 /* PushTransition.swift */,
+				ADF9750924758C69007927B5 /* ModalTransition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		AD8D00D12474DD29001A74C5 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00D22474DD4A001A74C5 /* MusicViewController.swift */,
+				ADF974EF24753940007927B5 /* MusicInteractor.swift */,
+				ADF974F124753950007927B5 /* MusicPresenter.swift */,
+				ADF974F32475396A007927B5 /* MusicConfiguration.swift */,
+				ADF974F52475397D007927B5 /* MusicRouter.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		AD8D00D42474DD7C001A74C5 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00D52474DD89001A74C5 /* MusicRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		ADB2556F246C2DAA0055AC99 = {
+			isa = PBXGroup;
+			children = (
+				ADB2557A246C2DAA0055AC99 /* ArchitectureDemo */,
+				ADB25579246C2DAA0055AC99 /* Products */,
+				A8A0D5CC0C0A583654C613F3 /* Pods */,
+				895F460CF5971731B1C8B3E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADB25579246C2DAA0055AC99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADB25578246C2DAA0055AC99 /* ArchitectureDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADB2557A246C2DAA0055AC99 /* ArchitectureDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AD8D00B824741154001A74C5 /* Source */,
+				ADB2557B246C2DAA0055AC99 /* AppDelegate.swift */,
+				ADB2557D246C2DAA0055AC99 /* SceneDelegate.swift */,
+				ADB2557F246C2DAA0055AC99 /* ViewController.swift */,
+				ADB25581246C2DAA0055AC99 /* Main.storyboard */,
+				ADB25584246C2DAD0055AC99 /* Assets.xcassets */,
+				ADB25586246C2DAD0055AC99 /* LaunchScreen.storyboard */,
+				ADB25589246C2DAD0055AC99 /* Info.plist */,
+			);
+			path = ArchitectureDemo;
+			sourceTree = "<group>";
+		};
+		ADF974F724756110007927B5 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				ADF97506247588D9007927B5 /* Action */,
+				ADF974F924756128007927B5 /* State */,
+				ADF974F824756120007927B5 /* Reducer */,
+				ADF9750E24759A62007927B5 /* Redux.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		ADF974F824756120007927B5 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9750024756753007927B5 /* MainAppReducer.swift */,
+				ADF975022475681C007927B5 /* GameReducer.swift */,
+				ADF9750424757A3B007927B5 /* MusicReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		ADF974F924756128007927B5 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				ADF974FA2475621E007927B5 /* MainAppState.swift */,
+				ADF974FC2475626D007927B5 /* MusicState.swift */,
+				ADF974FE247566B9007927B5 /* GameState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		ADF97506247588D9007927B5 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				ADF97507247588FC007927B5 /* GameActions.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		ADF9750B2475905B007927B5 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				ADF9750C247590B5007927B5 /* Property.swift */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADB25577246C2DAA0055AC99 /* ArchitectureDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB2558C246C2DAD0055AC99 /* Build configuration list for PBXNativeTarget "ArchitectureDemo" */;
+			buildPhases = (
+				AC76F7625867FDC7E9D532B7 /* [CP] Check Pods Manifest.lock */,
+				ADB25574246C2DAA0055AC99 /* Sources */,
+				ADB25575246C2DAA0055AC99 /* Frameworks */,
+				ADB25576246C2DAA0055AC99 /* Resources */,
+				235B897AC0DE421AF158CB93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArchitectureDemo;
+			productName = ArchitectureDemo;
+			productReference = ADB25578246C2DAA0055AC99 /* ArchitectureDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADB25570246C2DAA0055AC99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "khoi tran";
+				TargetAttributes = {
+					ADB25577246C2DAA0055AC99 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = ADB25573246C2DAA0055AC99 /* Build configuration list for PBXProject "ArchitectureDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADB2556F246C2DAA0055AC99;
+			productRefGroup = ADB25579246C2DAA0055AC99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADB25577246C2DAA0055AC99 /* ArchitectureDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADB25576246C2DAA0055AC99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADB25588246C2DAD0055AC99 /* LaunchScreen.storyboard in Resources */,
+				ADB25585246C2DAD0055AC99 /* Assets.xcassets in Resources */,
+				ADB25583246C2DAA0055AC99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		235B897AC0DE421AF158CB93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArchitectureDemo/Pods-ArchitectureDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArchitectureDemo/Pods-ArchitectureDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArchitectureDemo/Pods-ArchitectureDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC76F7625867FDC7E9D532B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArchitectureDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADB25574246C2DAA0055AC99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8D00D32474DD4A001A74C5 /* MusicViewController.swift in Sources */,
+				AD8D00D62474DD89001A74C5 /* MusicRoute.swift in Sources */,
+				ADF9750F24759A62007927B5 /* Redux.swift in Sources */,
+				AD8D00BF2474127E001A74C5 /* Utils.swift in Sources */,
+				ADF974FD2475626D007927B5 /* MusicState.swift in Sources */,
+				ADB25580246C2DAA0055AC99 /* ViewController.swift in Sources */,
+				ADF974EE24753799007927B5 /* Animator.swift in Sources */,
+				AD8D00CD2474D8AB001A74C5 /* Router.swift in Sources */,
+				ADF9750124756753007927B5 /* MainAppReducer.swift in Sources */,
+				AD8D00BC24741219001A74C5 /* BaseViewController.swift in Sources */,
+				ADF974F024753940007927B5 /* MusicInteractor.swift in Sources */,
+				ADB2557C246C2DAA0055AC99 /* AppDelegate.swift in Sources */,
+				AD8D00D02474D930001A74C5 /* Transition.swift in Sources */,
+				ADF9750A24758C69007927B5 /* ModalTransition.swift in Sources */,
+				ADB2557E246C2DAA0055AC99 /* SceneDelegate.swift in Sources */,
+				ADF974FF247566B9007927B5 /* GameState.swift in Sources */,
+				AD8D00DA2475322F001A74C5 /* HomeRouter.swift in Sources */,
+				ADF9750D247590B5007927B5 /* Property.swift in Sources */,
+				ADF974EC247533DB007927B5 /* PushTransition.swift in Sources */,
+				AD8D00C924742425001A74C5 /* HomeConfiguration.swift in Sources */,
+				ADF974F62475397D007927B5 /* MusicRouter.swift in Sources */,
+				ADF974F224753950007927B5 /* MusicPresenter.swift in Sources */,
+				AD8D00C324741EFC001A74C5 /* HomeViewController.swift in Sources */,
+				ADF9750524757A3B007927B5 /* MusicReducer.swift in Sources */,
+				AD8D00C5247423E7001A74C5 /* HomeInteractor.swift in Sources */,
+				ADF975032475681C007927B5 /* GameReducer.swift in Sources */,
+				ADF97508247588FC007927B5 /* GameActions.swift in Sources */,
+				ADF974FB2475621E007927B5 /* MainAppState.swift in Sources */,
+				ADF974F42475396A007927B5 /* MusicConfiguration.swift in Sources */,
+				AD8D00C7247423FE001A74C5 /* HomePresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ADB25581246C2DAA0055AC99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADB25582246C2DAA0055AC99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADB25586246C2DAD0055AC99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADB25587246C2DAD0055AC99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADB2558A246C2DAD0055AC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADB2558B246C2DAD0055AC99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADB2558D246C2DAD0055AC99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F68C8FF05F5C0C050E8F26F2 /* Pods-ArchitectureDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LRGJ95MX92;
+				INFOPLIST_FILE = ArchitectureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.khoitran.ArchitectureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADB2558E246C2DAD0055AC99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4A197D70BF363FF3E5E76C /* Pods-ArchitectureDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LRGJ95MX92;
+				INFOPLIST_FILE = ArchitectureDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.khoitran.ArchitectureDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADB25573246C2DAA0055AC99 /* Build configuration list for PBXProject "ArchitectureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2558A246C2DAD0055AC99 /* Debug */,
+				ADB2558B246C2DAD0055AC99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB2558C246C2DAD0055AC99 /* Build configuration list for PBXNativeTarget "ArchitectureDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB2558D246C2DAD0055AC99 /* Debug */,
+				ADB2558E246C2DAD0055AC99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADB25570246C2DAA0055AC99 /* Project object */;
+}
